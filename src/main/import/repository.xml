@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <machin j:dependencies="default"
+              j:modulePriority="0"
+              j:moduleType="module"
+              j:title="machin"
+              jcr:mixinTypes="jmix:hasExternalProviderExtension"
+              jcr:primaryType="jnt:module">
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <bidule j:applyOn="jnt:bidule"
+                    j:defaultTemplate="true"
+                    j:hiddenTemplate="false"
+                    jcr:primaryType="jnt:contentTemplate">
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="bidule"/>
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
+                        </pagecontent>
+                    </bidule>
+                </templates>
+                
+            </machin>
+    </modules>
+</content>
